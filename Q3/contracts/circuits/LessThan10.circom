@@ -13,3 +13,6 @@ template LessThan10() {
 
     out <== lt.out;
 }
+
+
+component main  = LessThan10();

@@ -12,6 +12,12 @@
     "snarkjs": "^0.4.16"
   },
   "scripts": {
-    "test": ". scripts/bonus-compile.sh && node scripts/bonus-bump-solidity.js && npx hardhat test"
+    "test": ". scripts/bonus-compile.sh && node scripts/bonus-bump-solidity.js && npx hardhat test",
+    "test:lessthan": ". scripts/lessthan10-compile.sh && node scripts/bonus-bump-solidity.js && npx hardhat test",
+    "test:lessthan:debug": "npx hardhat test"
+  },
+  "dependencies": {
+    "circom_tester": "^0.0.11",
+    "ffjavascript": "^0.2.52"
   }
 }
